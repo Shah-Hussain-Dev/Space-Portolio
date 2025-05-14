@@ -1,9 +1,10 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
+import MainHero from "./MainHero";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <div className="relative flex flex-col h-full w-full " id="about-me" >
       <video
         autoPlay
         muted
@@ -12,7 +13,8 @@ const Hero = () => {
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
-      <HeroContent />
+      {/* <HeroContent /> */}
+      <MainHero />
     </div>
   );
 };
